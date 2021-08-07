@@ -149,6 +149,14 @@ function About() {
                 <p>
                   インスタに載せた動画を希望者はYouTubeカタチプロジェクトのページに載せる？
                 </p>
+                <a
+                  href='https://docs.google.com/document/d/1QyywtSx74N9uQ24XaHVIpx0lMhRuOkoD/'
+                  rel='noopener noreferrer'
+                  target='_blank'
+                  className='mi-button'
+                >
+                  初回MTG議事録
+                </a>
               </div>
             </div>
           </div>
