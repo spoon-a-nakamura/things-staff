@@ -12,7 +12,6 @@ import Service from '../components/Service';
 import Testimonial from '../components/Testimonial';
 
 function About() {
-  const [toggler, setToggler] = useState(false);
   const [information, setInformation] = useState('');
   const [services, setServices] = useState([]);
   const [reviews, setReviews] = useState([]);
@@ -37,12 +36,6 @@ function About() {
         },
       },
     ],
-  };
-
-  const handleToggler = (event) => {
-    setToggler({
-      toggler: !toggler,
-    });
   };
 
   useEffect(() => {
@@ -76,21 +69,8 @@ function About() {
                   src={information.aboutImage}
                   placeholder='/images/about-image-placeholder.png'
                 >
-                  {(src) => (
-                    <img
-                      src={src}
-                      alt='THINGS 2022'
-                      onClick={() => handleToggler(!toggler)}
-                    />
-                  )}
+                  {(src) => <img src={src} alt='THINGS 2022' />}
                 </ProgressiveImage>
-                <span className='mi-about-image-icon'>
-                  <Icon.ZoomIn />
-                </span>
-                <FsLightbox
-                  toggler={toggler}
-                  sources={[information.aboutImageLg]}
-                />
               </div>
             </div>
             <div className='col-lg-6'>
@@ -140,6 +120,35 @@ function About() {
                 >
                   Google Drive
                 </a>
+              </div>
+            </div>
+          </div>
+          <div className='row'>
+            <div className='col-lg-8'>
+              <div className='mi-about-content'>
+                <h3>2022年 課題・目標</h3>
+                <p>
+                  イベントの来訪者を増やし、楽しんでもらう。⇒各参加者の宣伝や販売につながる
+                  そのためには
+                  1番は、魅力的な参加者を増やすこと（特にクラフト！）
+                  さらには、面白いコンテンツと宣伝。
+                </p>
+                <h4>参加者の確保</h4>
+                <p>
+                  同じ出店者のみではなく、新しい魅力的な作家を何人か加える必要がある。前年の参加者で翌年参加しない人も出てくるので、早めに参加者の紹介を募る必要がある。また、面白い参加者が増えることがイベントの魅力になり、自身の宣伝につながるという感覚も、共有できると良い。
+                </p>
+                <h4>収入</h4>
+                <p>参加費を2000円から3000円へ変更。</p>
+                <p>クラフト部門は参加者min.35名、max50名を目指したい。</p>
+                <h4>広告</h4>
+                <p>8月～3月のインスタの活用。</p>
+                <p>
+                  クラフト以外にも、Foodの制作動画や、音楽部なども活用できそう。もちろんワークショップも。
+                </p>
+                <h4>YouTubeの活用</h4>
+                <p>
+                  インスタに載せた動画を希望者はYouTubeカタチプロジェクトのページに載せる？
+                </p>
               </div>
             </div>
           </div>
