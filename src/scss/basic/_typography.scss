@@ -2,7 +2,7 @@
  * Typography
  */
 
-@import url("https://fonts.googleapis.com/css?family=Nunito:300,400,400i,600,700,800&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,400i,600,700,800&display=swap');
 
 *,
 *::before,
@@ -251,10 +251,10 @@ blockquote {
   }
 }
 
-[class^="flaticon-"],
-[class*=" flaticon-"],
-[class^="flaticon-"],
-[class*=" flaticon-"] {
+[class^='flaticon-'],
+[class*=' flaticon-'],
+[class^='flaticon-'],
+[class*=' flaticon-'] {
   line-height: 1;
 
   &::before,
@@ -297,8 +297,8 @@ textarea {
 }
 
 /* Checkbox & Radio Styles */
-input[type="checkbox"],
-input[type="radio"] {
+input[type='checkbox'],
+input[type='radio'] {
   visibility: hidden;
   opacity: 0;
   display: inline-block;
@@ -313,8 +313,8 @@ input[type="radio"] {
     cursor: pointer;
 
     &:before {
-      content: "";
-      font-family: "Font Awesome 5 free";
+      content: '';
+      font-family: 'Font Awesome 5 free';
       font-weight: 700;
       position: absolute;
       left: 0;
@@ -332,7 +332,7 @@ input[type="radio"] {
       color: $color-theme;
 
       &:before {
-        content: "\f00c";
+        content: '\f00c';
 
         color: $color-theme;
         border-color: $color-theme;
@@ -341,10 +341,10 @@ input[type="radio"] {
   }
 }
 
-input[type="radio"] {
+input[type='radio'] {
   & ~ label {
     &::before {
-      content: "";
+      content: '';
       position: absolute;
       left: 0;
       top: 50%;
@@ -361,7 +361,7 @@ input[type="radio"] {
   &:checked {
     & ~ label {
       &::before {
-        content: "";
+        content: '';
         color: $color-theme;
         border-color: $color-theme;
       }

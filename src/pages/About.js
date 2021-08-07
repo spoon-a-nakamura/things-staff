@@ -1,18 +1,19 @@
-import { Helmet } from "react-helmet";
-import axios from "axios";
-import FsLightbox from "fslightbox-react";
-import React, { useEffect, useState } from "react";
-import * as Icon from "react-feather";
-import ProgressiveImage from "react-progressive-image";
-import Slider from "react-slick";
-import Layout from "../components/Layout";
-import Sectiontitle from "../components/Sectiontitle";
-import Service from "../components/Service";
-import Testimonial from "../components/Testimonial";
+/* eslint-disable no-unused-vars */
+import { Helmet } from 'react-helmet';
+import axios from 'axios';
+import FsLightbox from 'fslightbox-react';
+import React, { useEffect, useState } from 'react';
+import * as Icon from 'react-feather';
+import ProgressiveImage from 'react-progressive-image';
+import Slider from 'react-slick';
+import Layout from '../components/Layout';
+import Sectiontitle from '../components/Sectiontitle';
+import Service from '../components/Service';
+import Testimonial from '../components/Testimonial';
 
 function About() {
   const [toggler, setToggler] = useState(false);
-  const [information, setInformation] = useState("");
+  const [information, setInformation] = useState('');
   const [services, setServices] = useState([]);
   const [reviews, setReviews] = useState([]);
 
@@ -45,13 +46,13 @@ function About() {
   };
 
   useEffect(() => {
-    axios.get("/api/information").then((response) => {
+    axios.get('/api/information').then((response) => {
       setInformation(response.data);
     });
-    axios.get("/api/services").then((response) => {
+    axios.get('/api/services').then((response) => {
       setServices(response.data);
     });
-    axios.get("/api/reviews").then((response) => {
+    axios.get('/api/reviews').then((response) => {
       setReviews(response.data);
     });
   }, []);
@@ -59,31 +60,31 @@ function About() {
   return (
     <Layout>
       <Helmet>
-        <title>About - Chester React Personal Portfolio Template</title>
+        <title>About | THINGS 2022 for staff</title>
         <meta
-          name="description"
-          content="Chester React Personal Portfolio Template About Page"
+          name='description'
+          content='Chester React Personal Portfolio Template About Page'
         />
       </Helmet>
-      <div className="mi-about-area mi-section mi-padding-top">
-        <div className="container">
-          <Sectiontitle title="About Me" />
-          <div className="row">
-            <div className="col-lg-6">
-              <div className="mi-about-image">
+      <div className='mi-about-area mi-section mi-padding-top'>
+        <div className='container'>
+          <Sectiontitle title='ABOUT' />
+          <div className='row'>
+            <div className='col-lg-6'>
+              <div className='mi-about-image'>
                 <ProgressiveImage
                   src={information.aboutImage}
-                  placeholder="/images/about-image-placeholder.png"
+                  placeholder='/images/about-image-placeholder.png'
                 >
                   {(src) => (
                     <img
                       src={src}
-                      alt="aboutimage"
+                      alt='THINGS 2022'
                       onClick={() => handleToggler(!toggler)}
                     />
                   )}
                 </ProgressiveImage>
-                <span className="mi-about-image-icon">
+                <span className='mi-about-image-icon'>
                   <Icon.ZoomIn />
                 </span>
                 <FsLightbox
@@ -92,74 +93,66 @@ function About() {
                 />
               </div>
             </div>
-            <div className="col-lg-6">
-              <div className="mi-about-content">
-                <h3>
-                  I am <span className="color-theme">{information.name}</span>
-                </h3>
-                <p>
-                  I am a frontend web developer. I can provide clean code and
-                  pixel perfect design. I also make website more & more
-                  interactive with web animations.
-                </p>
+            <div className='col-lg-6'>
+              <div className='mi-about-content'>
+                <h3>このサイトの役割</h3>
+                <p>{information.aboutContent}</p>
                 <ul>
-                  {!information.name ? null : (
-                    <li>
-                      <b>Full Name</b> {information.name}
-                    </li>
-                  )}
-                  {!information.age ? null : (
-                    <li>
-                      <b>Age</b> {information.age} Years
-                    </li>
-                  )}
-                  {!information.phone ? null : (
-                    <li>
-                      <b>Phone</b> {information.phone}
-                    </li>
-                  )}
-                  {!information.nationality ? null : (
-                    <li>
-                      <b>Nationality</b> {information.nationality}
-                    </li>
-                  )}
-                  {!information.language ? null : (
-                    <li>
-                      <b>Languages</b> {information.language}
-                    </li>
-                  )}
-                  {!information.email ? null : (
-                    <li>
-                      <b>Email</b> {information.email}
-                    </li>
-                  )}
-                  {!information.address ? null : (
-                    <li>
-                      <b>Address</b> {information.address}
-                    </li>
-                  )}
-                  {!information.freelanceStatus ? null : (
-                    <li>
-                      <b>Freelance</b> {information.freelanceStatus}
-                    </li>
-                  )}
+                  <li>
+                    <b>会期予定</b> 2022年GW頃
+                  </li>
+                  <li>
+                    <b>クラフト</b> 関口さん
+                  </li>
+                  <li>
+                    <b>フード</b> 田屋さん
+                  </li>
+                  <li>
+                    <b>ワークショップ</b> 田屋さん or 新規スタッフ
+                  </li>
+                  <li>
+                    <b>音楽</b> 鶫さん
+                  </li>
+                  <li>
+                    <b>インスタ</b> 清水さん
+                  </li>
+                  <li>
+                    <b>広報</b> 田屋さん
+                  </li>
+                  <li>
+                    <b>WEB</b> 中村さん
+                  </li>
+                  <li>
+                    <b>イラスト</b> 小島さん
+                  </li>
+                  <li>
+                    <b>ワークショップ監修</b> 近岡さん
+                  </li>
+                  <li>
+                    <b>旅するクラウドcafe</b> ヒョンアさん
+                  </li>
                 </ul>
-                <a href={information.cvfile} className="mi-button">
-                  Download CV
+                <a
+                  href={information.cvfile}
+                  rel='noopener noreferrer'
+                  target='_blank'
+                  className='mi-button'
+                >
+                  Google Drive
                 </a>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="mi-service-area mi-section mi-padding-top">
-        <div className="container">
-          <Sectiontitle title="Services" />
-          <div className="mi-service-wrapper">
-            <div className="row mt-30-reverse">
+      {/* <div className='mi-service-area mi-section mi-padding-top'>
+        <div className='container'>
+          <Sectiontitle title='Services' />
+          <div className='mi-service-wrapper'>
+            <div className='row mt-30-reverse'>
               {services.map((service) => (
                 <div
-                  className="col-lg-4 col-md-6 col-12 mt-30"
+                  className='col-lg-4 col-md-6 col-12 mt-30'
                   key={service.title}
                 >
                   <Service content={service} />
@@ -169,12 +162,12 @@ function About() {
           </div>
         </div>
       </div>
-      <div className="mi-review-area mi-section mi-padding-top mi-padding-bottom">
-        <div className="container">
-          <Sectiontitle title="Reviews" />
-          <div className="row justify-content-center">
-            <div className="col-12">
-              <Slider className="mi-testimonial-slider" {...sliderSettings}>
+      <div className='mi-review-area mi-section mi-padding-top mi-padding-bottom'>
+        <div className='container'>
+          <Sectiontitle title='Reviews' />
+          <div className='row justify-content-center'>
+            <div className='col-12'>
+              <Slider className='mi-testimonial-slider' {...sliderSettings}>
                 {reviews.map((review) => (
                   <Testimonial key={review.id} content={review} />
                 ))}
@@ -183,6 +176,7 @@ function About() {
           </div>
         </div>
       </div>
+     */}
     </Layout>
   );
 }

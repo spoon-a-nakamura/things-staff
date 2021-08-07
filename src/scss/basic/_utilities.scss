@@ -73,6 +73,10 @@
 
 .mi-section {
   position: relative;
+  padding : {
+    right: 7vw;
+    left: 7vw;
+  }
 }
 
 .mi-bglines {
@@ -83,6 +87,7 @@
   min-height: 100vh;
   width: calc(100% - 300px);
   z-index: -1;
+  display: none;
 
   span {
     width: 1px;
@@ -133,10 +138,10 @@
   }
 }
 
-.size-md[class^="lni-"],
-.size-lg[class^="lni-"],
-.size-sm[class^="lni-"],
-.size-xs[class^="lni-"] {
+.size-md[class^='lni-'],
+.size-lg[class^='lni-'],
+.size-sm[class^='lni-'],
+.size-xs[class^='lni-'] {
   font-size: inherit !important;
 }
 
@@ -145,16 +150,19 @@
 }
 
 .light-mode {
-  background: rgba(#ffffff, 0.5);
   position: fixed;
   z-index: 999;
   height: 40px;
   left: auto;
-  right: 0;
-  top: 60px;
+  right: -10px;
+  top: 10px;
   padding: 0 10px;
   display: flex;
   align-items: center;
+  button {
+    outline: none;
+    border: none;
+  }
 
   .icon {
     display: inline-block;
@@ -182,7 +190,7 @@
     border: 0;
 
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       left: 2px;
       top: 2px;

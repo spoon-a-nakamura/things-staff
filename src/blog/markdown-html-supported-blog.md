@@ -1,11 +1,27 @@
-![Markdown & HTML supported blog](/images/blog-image-1.jpg)
+![Markdown & HTML supported blog](/images/banners/workshop_banner@2x.png)
 
-### Markdown & HTML supported blog.
+### ワークショップ部門　スケジュール
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore tempora deleniti repellendus doloribus necessitatibus ullam accusantium iste natus assumenda nisi ut eius commodi quis tenetur fugit magni at, tempore cumque? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum consequatur earum debitis mollitia repellat porro dolorum magni neque, consectetur et nam fugiat ipsa, quibusdam accusamus aperiam asperiores quia inventore numquam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis reprehenderit cum quos quia necessitatibus ipsa mollitia error nemo dicta, possimus nobis tempora quod voluptate nostrum ducimus nulla aperiam, explicabo pariatur.
+#### スケジュール
+**初めて参加される方は、早めにBASEのショップを登録ください**
 
->Inventore tempora deleniti repellendus doloribus necessitatibus ullam accusantium iste natus assumenda nisi ut eius commodi quis tenetur fugit consequatur earum debitis mollitia repellat.
+- 10月末
+ワークショッププランの提出と、共有できる、Zoomについての資料（受講者へ配布する資料）を作成予定ですので、提供できる情報などの募集
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore tempora deleniti repellendus doloribus necessitatibus ullam accusantium iste natus assumenda nisi ut eius commodi quis tenetur fugit magni at, tempore cumque? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum consequatur earum debitis mollitia repellat.
+- 11月
+ワークショップ講師全体ミーティング
+　
+- 12月
+画像、ワークショップ詳細など、提出（後日の微調整は可能ですが、宣伝のために早めに提出いただきます。）
 
-Inventore tempora deleniti repellendus doloribus necessitatibus ullam accusantium iste natus assumenda nisi ut eius commodi quis tenetur fugit consequatur earum debitis mollitia repellat.
+- 1月
+テストワークショップ（希望者のみ・初めての参加者はZoomのカメラワークなどのテストも兼ねていますので、なるべく実施をお願いします。＊THINGSから、材料費など若干の補助が可能です。）
+
+- 3月
+THINGSアカウントにて、インスタ宣伝開始。今年はインスタのフィード＆ストーリーズで、講師の仕事を動画で紹介し、ワークショップにつなげられればと思います。希望の方は後日インスタ部門から案内がありますが、ワークショップについては2月中にデータを提出ください。（顔が写らなくても大丈夫です。）
+
+- 4月
+プレ・ワークショップ。希望者は宣伝を兼ねて、THINGSの会期前にワークショップが可能です。一人500円×2名分の受講料をTHINGSで負担いたします。参加者には、参加した感想などをいただく予定です。
+
+- 5月
+本番ワークショップ。＊会期中、Live配信などについては、後日またご案内いたします。

@@ -1,12 +1,12 @@
-import axios from "axios";
-import React, { useEffect, useState } from "react";
-import { Helmet } from "react-helmet";
-import Particles from "react-particles-js";
-import Layout from "../components/Layout";
-import Socialicons from "../components/Socialicons";
+import axios from 'axios';
+import React, { useEffect, useState } from 'react';
+import { Helmet } from 'react-helmet';
+import Particles from 'react-particles-js';
+import Layout from '../components/Layout';
+import Socialicons from '../components/Socialicons';
 
 function Home({ lightMode }) {
-  const [information, setInformation] = useState("");
+  const [information, setInformation] = useState('');
   const paramConfig = {
     particles: {
       number: {
@@ -16,7 +16,7 @@ function Home({ lightMode }) {
         },
       },
       color: {
-        value: "#ffffff",
+        value: '#ffffff',
       },
       opacity: {
         value: 0.1,
@@ -35,8 +35,8 @@ function Home({ lightMode }) {
       move: {
         random: true,
         speed: 1,
-        direction: "top",
-        out_mode: "out",
+        direction: 'top',
+        out_mode: 'out',
       },
     },
   };
@@ -50,7 +50,7 @@ function Home({ lightMode }) {
         },
       },
       color: {
-        value: "#000000",
+        value: '#000000',
       },
       opacity: {
         value: 0.1,
@@ -69,38 +69,28 @@ function Home({ lightMode }) {
       move: {
         random: true,
         speed: 1,
-        direction: "top",
-        out_mode: "out",
+        direction: 'top',
+        out_mode: 'out',
       },
     },
   };
   useEffect(() => {
-    axios.get("/api/information").then((response) => {
+    axios.get('/api/information').then((response) => {
       setInformation(response.data);
     });
   }, []);
   return (
     <Layout>
       <Helmet>
-        <title>Home - Chester React Personal Portfolio Template</title>
-        <meta
-          name="description"
-          content="Chester React Personal Portfolio Template Homepage"
-        />
+        <title>THINGS 2022 for staff</title>
+        <meta name='description' content='THINGS 2022 for staff' />
       </Helmet>
-      <div className="mi-home-area mi-padding-section">
-        <Particles
-          className="mi-home-particle"
-          params={lightMode ? paramConfigLight : paramConfig}
-        />
-        <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-lg-10 col-12">
-              <div className="mi-home-content">
-                <h1>
-                  Hi, I am{" "}
-                  <span className="color-theme">{information.name}</span>
-                </h1>
+      <div className='mi-home-area mi-padding-section'>
+        <div className='container'>
+          <div className='row justify-content-center'>
+            <div className='col-lg-10 col-12'>
+              <div className='mi-home-content'>
+                <h1>THINGS 2022 for staff</h1>
                 <p>{information.aboutContent}</p>
                 <Socialicons bordered />
               </div>
@@ -108,6 +98,10 @@ function Home({ lightMode }) {
           </div>
         </div>
       </div>
+      <Particles
+        className='mi-home-particle'
+        params={lightMode ? paramConfigLight : paramConfig}
+      />
     </Layout>
   );
 }

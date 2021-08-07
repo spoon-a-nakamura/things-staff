@@ -1,15 +1,15 @@
 /** @format */
 
 // Colors
-$color-theme: #037fff;
-$color-secondary: #ffffff;
-$color-body: #a4acc4;
-$color-heading: #ffffff;
+$color-theme: #cba381;
+$color-secondary: $color-theme;
+$color-body: #bdbdb6;
+$color-heading: $color-theme;
 $color-border: #2e344e;
 $color-bg-body: #10121b;
 $color-bg-dark: #0c0e16;
 
-$light-color-theme: #037fff;
+$light-color-theme: $color-theme;
 $light-color-secondary: #000000;
 $light-color-body: #313131;
 $light-color-heading: #151515;
@@ -18,8 +18,8 @@ $light-color-bg-body: #f1f1f1;
 $light-color-bg-dark: #0c0e16;
 
 // Font Family
-$ff-body: "Nunito", sans-serif;
-$ff-heading: "Nunito", sans-serif;
+$ff-body: cronos-pro, fot-tsukubrdgothic-std, sans-serif;
+$ff-heading: cronos-pro, fot-tsukubrdgothic-std, sans-serif;
 
 // Font Size
 $fz-body: 18px;
@@ -29,14 +29,14 @@ $input-button-height: 50px;
 $transition: all 0.4s ease-out;
 
 // Layouts
-$layout-dektop: "only screen and (min-width: 1920px)";
-$layout-desktop-xs: "only screen and (min-width: 1600px) and (max-width: 1919px)";
-$layout-laptop: "only screen and (min-width: 1200px) and (max-width: 1599px)";
-$layout-notebook: "only screen and (min-width: 992px) and (max-width: 1199px)";
-$layout-tablet: "only screen and (min-width: 768px) and (max-width: 991px)";
-$layout-mobile-lg: "only screen and (max-width: 767px)";
-$layout-mobile-sm: "only screen and (max-width: 575px)";
-$layout-mobile-xs: "only screen and (max-width: 480px)";
+$layout-dektop: 'only screen and (min-width: 1920px)';
+$layout-desktop-xs: 'only screen and (min-width: 1600px) and (max-width: 1919px)';
+$layout-laptop: 'only screen and (min-width: 1200px) and (max-width: 1599px)';
+$layout-notebook: 'only screen and (min-width: 992px) and (max-width: 1199px)';
+$layout-tablet: 'only screen and (min-width: 768px) and (max-width: 991px)';
+$layout-mobile-lg: 'only screen and (max-width: 767px)';
+$layout-mobile-sm: 'only screen and (max-width: 575px)';
+$layout-mobile-xs: 'only screen and (max-width: 480px)';
 
 // Social Colors
 $facebook: #3b5999;
