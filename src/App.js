@@ -10,6 +10,7 @@ import Home from './pages/Home';
 import Notfound from './pages/Notfound';
 import Portfolios from './pages/Portfolios';
 import Schedule from './pages/Schedule';
+import Craft from './pages/Craft';
 import { adobeLoader } from './fonts/adobeLoader';
 
 function App() {
@@ -47,6 +48,7 @@ function App() {
         </Route>
         <Route path='/about' component={About} />
         <Route path='/schedule' component={Schedule} />
+        <Route path='/craft' component={Craft} />
         <Route path='/portfolios' component={Portfolios} />
         <Route path='/blogs' exact component={Blogs} />
         <Route path='/blogs/blog-details/:id/:title' component={BlogDetails} />

@@ -54,10 +54,6 @@ function About() {
     <Layout>
       <Helmet>
         <title>About | THINGS 2022 for staff</title>
-        <meta
-          name='description'
-          content='Chester React Personal Portfolio Template About Page'
-        />
       </Helmet>
       <div className='mi-about-area mi-section mi-padding-top'>
         <div className='container'>

@@ -50,6 +50,11 @@ function Header() {
               <span>Schedule</span>
             </NavLink>
           </li>
+          <li>
+            <NavLink to='/craft'>
+              <span>Craft</span>
+            </NavLink>
+          </li>
           {/* <li><NavLink to="/portfolios"><span>Portfolios</span></NavLink></li>
                     <li><NavLink to="/blogs"><span>Blogs</span></NavLink></li>
                     <li><NavLink to="/contact"><span>Contact</span></NavLink></li> */}
